@@ -1,0 +1,103 @@
+import { ToolDefinition } from "../types";
+
+export const AI_TOOLS: ToolDefinition[] = [
+  {
+    id: "general",
+    name: "Ask Anything",
+    tagline: "Universal Intelligence",
+    description: "Ask Dili Ai any general question, daily query, or complex curiosity.",
+    icon: "Sparkles",
+    color: "text-cyan-400",
+    gradient: "from-cyan-500/20 via-blue-500/10 to-transparent",
+    starterPrompts: [
+      "What is photosynthesis and how does it sustain life?",
+      "How do airplanes navigate through heavy cloud cover?",
+      "What are the main causes and remedies for inflation?",
+      "Explain the fundamental principles of quantum computing simply.",
+    ],
+  },
+  {
+    id: "study",
+    name: "Study Assistant",
+    tagline: "Academic & Exam Mastery",
+    description: "Master school subjects, mathematics, sciences, commerce, and step-by-step problem solutions.",
+    icon: "GraduationCap",
+    color: "text-emerald-400",
+    gradient: "from-emerald-500/20 via-teal-500/10 to-transparent",
+    starterPrompts: [
+      "Solve this step-by-step: Solve 2x² - 5x + 3 = 0 using the quadratic formula.",
+      "Explain Newton's three laws of motion with real-world examples.",
+      "What is double-entry bookkeeping in commerce and why is it essential?",
+      "Help me understand cellular respiration and its stages.",
+    ],
+  },
+  {
+    id: "ideas",
+    name: "Idea Generator",
+    tagline: "Creativity & Innovation",
+    description: "Brainstorm high-impact ideas for websites, SaaS apps, startups, and creative projects.",
+    icon: "Lightbulb",
+    color: "text-amber-400",
+    gradient: "from-amber-500/20 via-orange-500/10 to-transparent",
+    starterPrompts: [
+      "Give me 5 unique SaaS business ideas for university students in 2026.",
+      "Brainstorm a futuristic sci-fi story premise with unexpected twists.",
+      "Generate YouTube video concepts about emerging artificial intelligence breakthroughs.",
+      "What are innovative mobile app ideas to combat food waste?",
+    ],
+  },
+  {
+    id: "writing",
+    name: "Writing Assistant",
+    tagline: "Polished Communication",
+    description: "Draft, polish, rewrite, and elevate emails, essays, articles, and marketing copy.",
+    icon: "PenTool",
+    color: "text-purple-400",
+    gradient: "from-purple-500/20 via-violet-500/10 to-transparent",
+    starterPrompts: [
+      "Write a persuasive email proposing a partnership to a tech company.",
+      "Polish this text for a formal executive report to sound professional and concise.",
+      "Draft a compelling LinkedIn post introducing a new open-source software project.",
+      "Create an engaging product description for an eco-friendly smart backpack.",
+    ],
+  },
+  {
+    id: "coding",
+    name: "Coding Assistant",
+    tagline: "Software & Algorithms",
+    description: "Generate, explain, debug, optimize, and refactor code across all modern programming languages.",
+    icon: "Code2",
+    color: "text-blue-400",
+    gradient: "from-blue-500/20 via-indigo-500/10 to-transparent",
+    starterPrompts: [
+      "Write a TypeScript debounce hook with unit tests and clear type annotations.",
+      "Explain how binary search trees work and implement one in Python.",
+      "How do I fix CORS issues when connecting a React frontend to an Express API?",
+      "Optimize this SQL query for high-throughput transactional logging.",
+    ],
+  },
+  {
+    id: "explainer",
+    name: "Explain Anything",
+    tagline: "Intuitive Mental Models",
+    description: "Deconstruct complex topics, scientific theories, and technical jargon into simple, unforgettable terms.",
+    icon: "HelpCircle",
+    color: "text-rose-400",
+    gradient: "from-rose-500/20 via-pink-500/10 to-transparent",
+    starterPrompts: [
+      "Explain blockchain technology like I am a 12-year-old.",
+      "How does the immune system remember viruses after a vaccine?",
+      "What is the theory of relativity using an analogy of a speeding train?",
+      "Explain how neural networks learn without using advanced calculus.",
+    ],
+  },
+];
+
+export const HOMEPAGE_SUGGESTIONS = [
+  { label: "Explain a difficult topic", prompt: "Explain the theory of relativity simply with clear everyday analogies.", tool: "explainer" },
+  { label: "Solve a math problem", prompt: "Solve 3x + 7 = 28 step-by-step and verify the solution.", tool: "study" },
+  { label: "Give me project ideas", prompt: "Give me 5 innovative AI startup and web app ideas for 2026.", tool: "ideas" },
+  { label: "Help me write something", prompt: "Help me write a concise, polite follow-up email after a job interview.", tool: "writing" },
+  { label: "Create code", prompt: "Write a modern Python function to fetch, parse, and cache JSON data with error handling.", tool: "coding" },
+  { label: "Ask a question", prompt: "What is photosynthesis and why is it essential to Earth's atmosphere?", tool: "general" },
+];

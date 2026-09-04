@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix DLICOM AI Helper",
+  "description": "Dili Ai — Your Smart AI Assistant made by a dlicom community member name ( Mohammed | dlicom ). Your AI. Your Ideas. Your Answers. This website is made with heart and for community ",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
